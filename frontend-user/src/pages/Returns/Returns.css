@@ -1,0 +1,232 @@
+.returns-page {
+  width: 100%;
+  min-height: 70vh;
+
+  background: #fff;
+  color: #111;
+
+  padding: 70px 50px 100px;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.returns-header {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 25px 20px 70px;
+
+  text-align: center;
+}
+
+.returns-label {
+  margin: 0 0 18px;
+
+  color: #777;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.returns-header h1 {
+  margin: 0;
+
+  font-size: 52px;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.returns-header > p:last-child {
+  max-width: 620px;
+
+  margin: 22px auto 0;
+
+  color: #777;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.returns-content {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.returns-section {
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 25px;
+
+  padding: 35px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.returns-section > span {
+  padding-top: 5px;
+
+  color: #999;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+.returns-section h2 {
+  margin: 0 0 13px;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+.returns-section p {
+  max-width: 780px;
+
+  margin: 0 0 12px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+.returns-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.returns-section a {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: #111;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.returns-section a:hover {
+  transform: translateX(4px);
+}
+
+/* =========================
+   UPDATED
+========================= */
+
+.returns-updated {
+  max-width: 1000px;
+
+  margin: 25px auto 0;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .returns-page {
+    padding: 60px 35px 80px;
+  }
+
+  .returns-header h1 {
+    font-size: 46px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .returns-page {
+    padding: 45px 20px 70px;
+  }
+
+  .returns-header {
+    padding: 20px 5px 50px;
+  }
+
+  .returns-header h1 {
+    font-size: 36px;
+  }
+
+  .returns-header > p:last-child {
+    font-size: 13px;
+  }
+
+  .returns-section {
+    grid-template-columns: 35px 1fr;
+
+    gap: 12px;
+
+    padding: 28px 0;
+  }
+
+  .returns-section h2 {
+    font-size: 17px;
+  }
+
+  .returns-section p {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+  .returns-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .returns-header h1 {
+    font-size: 32px;
+  }
+
+  .returns-section {
+    grid-template-columns: 30px 1fr;
+
+    gap: 10px;
+  }
+}

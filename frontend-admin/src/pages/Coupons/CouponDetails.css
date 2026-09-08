@@ -1,0 +1,255 @@
+.coupon-details-page {
+  padding: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.coupon-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.back-coupon-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 14px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+}
+
+.coupon-details-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.coupon-details-header p {
+  margin: 7px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.delete-coupon-btn {
+  border: 1px solid #e3bcbc;
+  background: #fff;
+  color: #c62828;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-coupon-btn:hover {
+  background: #fff5f5;
+}
+
+.delete-coupon-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.coupon-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coupon-form-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.coupon-form-card h2 {
+  margin: 0 0 22px;
+  font-size: 18px;
+}
+
+.coupon-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.coupon-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.coupon-field.full-width {
+  margin-top: 20px;
+}
+
+.coupon-field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.coupon-field input,
+.coupon-field select,
+.coupon-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  background: #fff;
+}
+
+.coupon-field input:focus,
+.coupon-field select:focus,
+.coupon-field textarea:focus {
+  border-color: #999;
+}
+
+.coupon-field textarea {
+  resize: vertical;
+}
+
+.coupon-field small {
+  color: #888;
+  font-size: 11px;
+}
+
+.coupon-form-error {
+  white-space: pre-line;
+  background: #fff1f1;
+  border: 1px solid #f0caca;
+  color: #b42323;
+  border-radius: 8px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.coupon-form-success {
+  background: #effaf3;
+  border: 1px solid #c9ead5;
+  color: #168344;
+  border-radius: 8px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.coupon-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coupon-toggle input {
+  display: none;
+}
+
+.coupon-toggle-slider {
+  width: 44px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.coupon-toggle-slider::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  transition: 0.2s;
+}
+
+.coupon-toggle input:checked
+  + .coupon-toggle-slider {
+  background: #111;
+}
+
+.coupon-toggle input:checked
+  + .coupon-toggle-slider::after {
+  transform: translateX(20px);
+}
+
+.coupon-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-coupon-btn,
+.save-coupon-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-coupon-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.save-coupon-btn {
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+.save-coupon-btn:hover {
+  opacity: 0.85;
+}
+
+.save-coupon-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.coupon-details-state {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .coupon-details-page {
+    padding: 18px;
+  }
+
+  .coupon-details-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .coupon-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coupon-form-card {
+    padding: 18px;
+  }
+
+  .coupon-form-actions {
+    width: 100%;
+  }
+
+  .cancel-coupon-btn,
+  .save-coupon-btn {
+    flex: 1;
+  }
+}

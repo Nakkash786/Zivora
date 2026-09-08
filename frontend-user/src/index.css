@@ -1,0 +1,14 @@
+.forgot-password {
+  text-align: right;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.forgot-password a {
+  color: #555555;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  color: #111111;
+}
